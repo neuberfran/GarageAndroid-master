@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="android-17" level="project" />
+    <orderEntry type="library" name="android-21" level="project" />
+    <orderEntry type="library" name="data2" level="project" />
+    <orderEntry type="library" name="android-L" level="project" />
+    <orderEntry type="library" name="data3" level="project" />
+    <orderEntry type="library" name="lib1" level="project" />
+    <orderEntry type="library" name="android-19" level="project" />
+    <orderEntry type="library" name="data" level="project" />
+    <orderEntry type="library" name="android-20" level="project" />
+    <orderEntry type="library" name="lib2" level="project" />
+    <orderEntry type="library" name="data4" level="project" />
+    <orderEntry type="library" name="data1" level="project" />
+    <orderEntry type="module" module-name="buildConfig6" />
+    <orderEntry type="module" module-name="sdk" />
+  </component>
+</module>
+
