@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jun 11 20:42:04 BRT 2019
+0.baseType=DIRECTORY
+0.base=C\:\\neuber\\adt-bundle-windows-x86_64-20140702\\sdk\\GarageAndroid-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.path=classes.dex
+0.set=DEX
+count=1

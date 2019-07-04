@@ -1,41 +1,29 @@
-/**
- * Copyright 2013 Ryan Shaw (ryanfx1@gmail.com)
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
- */
 package com.blogspot.ryanfx.service;
 
-import java.io.IOException;
-import javax.net.ssl.HttpsURLConnection;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.ClientProtocolException;
-import com.blogspot.ryanfx.application.GarageApplication;
 import android.app.IntentService;
 import android.content.Intent;
 import android.util.Log;
 
+import com.blogspot.ryanfx.application.GarageApplication;
+
+import org.apache.http.HttpStatus;
+import org.apache.http.client.ClientProtocolException;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+
 public abstract class GarageService extends IntentService{
 	public static final String AUTH_TOKEN = "AUTH_TOKEN";
-	public static final String INTENT_TOGGLE = "com.blogspot.ryanfx.garage-toggle-result";
-	public static final String INTENT_CLOSE  = "com.blogspot.ryanfx.garage-close-result";
-	public static final String INTENT_STATE  = "com.blogspot.ryanfx.garage-state-result";
-	public static final String INTENT_ERROR  = "com.blogspot.ryanfx.garage-error-result";
+	public static final String INTENT_TOGGLE = "com.blogspot.ryan.garage-toggle-result";
+	public static final String INTENT_CLOSE  = "com.blogspot.ryan.garage-close-result";
+	public static final String INTENT_STATE  = "com.blogspot.ryan.garage-state-result";
+	public static final String INTENT_ERROR  = "com.blogspot.ryan.garage-error-result";
 	public static final String EXTRA_HTTP_RESPONSE_CODE = "EXTRA_HTTP_RESPONSE_CODE";
 	public static final String EXTRA_HTTP_RESPONSE_TEXT = "EXTRA_HTTP_RESPONSE_TEXT";
 	private static final int TIMEOUT = 3000;
 	private final boolean SECURE = true;
 
-	protected  GarageApplication application;
+	protected GarageApplication application;
 
 	public GarageService(String name) {
 		super(name);
@@ -53,9 +41,9 @@ public abstract class GarageService extends IntentService{
 		int port = application.getServerPort();
 		Intent broadcast = new Intent(intent.getAction());
 		try {
-			String protocol = SECURE ? "https" : "http";
+			String protocol =  "http";
 			String baseString = protocol + "://" + host + ":" + port + "/GarageDoor/Garage/";
-			HttpsURLConnection urlConnection = getRequestFromIntent(baseString, intent);
+			HttpURLConnection urlConnection = getRequestFromIntent(baseString, intent);
 			int responseCode = urlConnection.getResponseCode();
 			application.getAuthenticator().setSuccessfulConnectionMade();
 			//getResponseCode or getInputStream signals to actually make the request
@@ -76,8 +64,8 @@ public abstract class GarageService extends IntentService{
 			sendBroadcast(broadcast);
 		}
 	}
-	
-	protected void setupConnectionProperties(HttpsURLConnection urlConnection) {
+
+	protected void setupConnectionProperties(HttpURLConnection urlConnection) {
 		urlConnection.setConnectTimeout(TIMEOUT);
 	}
 
@@ -86,6 +74,6 @@ public abstract class GarageService extends IntentService{
 		return s.hasNext() ? s.next() : "";
 	}
 
-	protected abstract HttpsURLConnection getRequestFromIntent(String baseString, Intent intent) throws ClientProtocolException, IOException;
+	protected abstract HttpURLConnection getRequestFromIntent(String baseString, Intent intent) throws ClientProtocolException, IOException;
 
 }

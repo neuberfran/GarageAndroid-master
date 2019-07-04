@@ -1,0 +1,4 @@
+#Wed Jul 03 16:25:09 BRT 2019
+base.0=C\:\\neuber\\adt-bundle-windows-x86_64-20140702\\sdk\\GarageAndroid-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex
