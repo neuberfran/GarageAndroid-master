@@ -30,6 +30,12 @@ import com.blogspot.ryanfx.service.GarageService;
 import com.blogspot.ryanfx.service.GarageStateService;
 import com.blogspot.ryanfx.service.GarageToggleService;
 
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceScreen;
+
 import org.apache.http.HttpStatus;
 
 import java.io.IOException;
@@ -92,23 +98,13 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+	    setContentView(R.layout.activity_main);
 
-		supportFragmentManager.beginTransaction()
-				.replace(R.id.content, new ConfigurationActivity () );
-				.commit();
-
-//		FragmentManager supportFragmentManager;
-//		supportFragmentManager
-//				.beginTransaction()
-//				.replace(R.xml.server_config, new ConfigurationActivity () );
-//		        .commit()
-
-//		if (savedInstanceState == null) {
+//		if (getSupportFragmentManager().findFragmentById(android.R.id.content)==null) {
 //			getSupportFragmentManager().beginTransaction()
-//					.replace(R.xml.server_config, new ConfigurationActivity();
+//					.add(android.R.id.content, new ConfigurationActivity ())
 //					.commit();
-
+//		}
 
         toggleButton = (Button) findViewById(R.id.toggle_garage_button);
 		closeButton = (Button) findViewById(R.id.close_garage_button);
@@ -274,6 +270,7 @@ public class MainActivity extends AppCompatActivity {
 		serviceIntent.setAction(GarageService.INTENT_CLOSE);
 		startService(serviceIntent);
 	}
+
 
 	private class GarageActionAuthCallback implements
 	AccountManagerCallback<Bundle> {

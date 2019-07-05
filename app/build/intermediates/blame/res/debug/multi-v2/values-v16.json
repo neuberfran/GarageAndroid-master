@@ -4,7 +4,7 @@
             "outputFile": "C:\\neuber\\adt-bundle-windows-x86_64-20140702\\sdk\\GarageAndroid-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\e35dd07048491c9985d17d5e5ab5542d\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\f957020633214edef30e66c78850e28c\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\dca4bdf78019ed5b42a290efac650bae\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\314dfa8f8cc6e70c14ea6d8e77d37f4d\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

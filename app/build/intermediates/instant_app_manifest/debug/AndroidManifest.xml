@@ -20,6 +20,7 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light" >
         <activity
             android:name="com.blogspot.ryanfx.activity.MainActivity"

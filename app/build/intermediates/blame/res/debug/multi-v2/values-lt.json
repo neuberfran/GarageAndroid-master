@@ -4,24 +4,7 @@
             "outputFile": "C:\\neuber\\adt-bundle-windows-x86_64-20140702\\sdk\\GarageAndroid-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\e35dd07048491c9985d17d5e5ab5542d\\res\\values-lt\\values-lt.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "31",
-                        "startColumns": "4",
-                        "startOffsets": "3067",
-                        "endColumns": "100",
-                        "endOffsets": "3163"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\dca4bdf78019ed5b42a290efac650bae\\res\\values-lt\\values-lt.xml",
+                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\314dfa8f8cc6e70c14ea6d8e77d37f4d\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "105,221,322,435,522,631,752,834,915,1009,1105,1203,1299,1403,1499,1597,1700,1794,1888,1973,2082,2191,2291,2401,2505,2618,2794,2984",
                         "endColumns": "115,100,112,86,108,120,81,80,93,95,97,95,103,95,97,102,93,93,84,108,108,99,109,103,112,175,100,82",
                         "endOffsets": "216,317,430,517,626,747,829,910,1004,1100,1198,1294,1398,1494,1592,1695,1789,1883,1968,2077,2186,2286,2396,2500,2613,2789,2890,3062"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\neube\\.gradle\\caches\\transforms-2\\files-2.1\\f957020633214edef30e66c78850e28c\\res\\values-lt\\values-lt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "3067",
+                        "endColumns": "100",
+                        "endOffsets": "3163"
                     }
                 },
                 {
